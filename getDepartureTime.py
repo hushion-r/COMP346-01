@@ -1,4 +1,4 @@
-# from urllib3 import *
+from Requests import *
 
 # author: Rae Hushion
 # MetroTransitActivity
@@ -31,7 +31,7 @@ class GetInfo:
                 print("ERROR. TRY AGAIN.")
 
     def get_stops(self):
-        all_stops = []      #add
+        all_stops = []      # add
         while self.stops not in all_stops:
             self.stops = input("\nWhich stop will you depart from? (Enter stop code)")
             if self.stops not in all_stops:
@@ -41,5 +41,6 @@ class GetInfo:
 class CallMetroAPI:
     def __init__(self):
         self
+
 
 userInfo = GetInfo()
