@@ -19,7 +19,8 @@ class HttpResponse:
                 'status=%s headers=%s body=%s...' %
                 (self.statusCode, self.headers, self.body)
             )
-        
+
+
 class HttpClient:
     def __init__(self, host, port=80):
         """Constructs a new http client."""
